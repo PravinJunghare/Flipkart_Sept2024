@@ -6,8 +6,8 @@
       <class name="com.qa.flipkart.tests.LoginPageTest">
         <methods>
           <include name="tearDown"/>
-          <include name="loginPaggeImageTest"/>
           <include name="setUp"/>
+          <include name="searchProductTest"/>
         </methods>
       </class> <!-- com.qa.flipkart.tests.LoginPageTest -->
     </classes>

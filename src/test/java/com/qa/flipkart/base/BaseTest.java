@@ -11,15 +11,15 @@ import org.testng.asserts.SoftAssert;
 import com.qa.filpkart.factory.DriverFactory;
 import com.qa.flipkart.pages.LoginPage;
 
-
+import com.qa.flipkart.pages.SearchPage;
 
 public class BaseTest {
 	DriverFactory df;
 	WebDriver driver;
 	protected Properties prop;
 	protected LoginPage loginPage;
+	protected SearchPage searchPage;
 	protected SoftAssert softAssert;
-
 
 	@BeforeTest
 	public void setUp() {
