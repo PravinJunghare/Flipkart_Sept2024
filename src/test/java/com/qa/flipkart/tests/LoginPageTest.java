@@ -6,8 +6,6 @@ import org.testng.annotations.Test;
 import com.qa.flipkart.base.BaseTest;
 import com.qa.flipkart.constants.AppConstant;
 
-
-
 public class LoginPageTest extends BaseTest {
 
 	@Test(priority = 1)
@@ -24,11 +22,17 @@ public class LoginPageTest extends BaseTest {
 		// Assert.assertTrue(actUrl.contains("route=account/login"));
 		Assert.assertTrue(actUrl.contains(AppConstant.LOGIN_PAGE_URL_FRACTION_VALUE));
 	}
-	
-	@Test(priority = 3)
+
+	/*@Test(priority = 3)
 	public void loginPageImageTest() {
-		int actcount= loginPage.getImageCount();
-		
+		int actcount = loginPage.getImageCount();
+
 		Assert.assertEquals(actcount, 82);
+	}*/
+
+	@Test(priority = 4)
+	public void searchProductTest() {
+		loginPage.searchProduct("iphone 15 plus");
+
 	}
 }

@@ -10,16 +10,17 @@ import org.testng.asserts.SoftAssert;
 
 import com.qa.filpkart.factory.DriverFactory;
 import com.qa.flipkart.pages.LoginPage;
-
-
+import com.qa.flipkart.pages.ProductInfoPage;
+import com.qa.flipkart.pages.SearchPage;
 
 public class BaseTest {
 	DriverFactory df;
 	WebDriver driver;
 	protected Properties prop;
 	protected LoginPage loginPage;
+	protected SearchPage searchPage;
+	protected ProductInfoPage productInfoPage;
 	protected SoftAssert softAssert;
-
 
 	@BeforeTest
 	public void setUp() {
@@ -28,6 +29,9 @@ public class BaseTest {
 		// driver = df.initDriver("chrome");
 		driver = df.initDriver(prop);
 		loginPage = new LoginPage(driver);
+		searchPage = new SearchPage(driver);
+		productInfoPage= new ProductInfoPage(driver);
+
 		softAssert = new SoftAssert();
 
 	}

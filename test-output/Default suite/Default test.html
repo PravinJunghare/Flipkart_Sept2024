@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Sep 05 14:37:10 IST 2024</td>
+<td>Started on:</td><td>Thu Oct 03 12:52:16 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>31 seconds (31348 ms)</td>
+<tr><td>Total time:</td><td>56 seconds (56537 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,16 +76,18 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.qa.flipkart.tests.LoginPageTest.loginPaggeImageTest()'><b>loginPaggeImageTest</b><br>Test class: com.qa.flipkart.tests.LoginPageTest</td>
-<td><div><pre>java.lang.AssertionError: expected [20000] but found [82]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:1419)
-	at org.testng.Assert.assertEquals(Assert.java:1383)
-	at org.testng.Assert.assertEquals(Assert.java:1429)
-	at com.qa.flipkart.tests.LoginPageTest.loginPaggeImageTest(LoginPageTest.java:32)
+<td title='com.qa.flipkart.tests.ProductInfoTest.buyProductTest()'><b>buyProductTest</b><br>Test class: com.qa.flipkart.tests.ProductInfoTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id=&quot;container&quot;]/div/div[2]/div/div/div[1]/div/div[3]/div/form/button (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.89, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\shree\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63510}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63510/devtoo..., se:cdpVersion: 129.0.6668.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d35f2f2158835e4060528753277b46eb
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.qa.flipkart.utils.ElementUtil.waitForElementVisible(ElementUtil.java:210)
+	at com.qa.flipkart.pages.ProductInfoPage.buyProduct(ProductInfoPage.java:53)
+	at com.qa.flipkart.tests.ProductInfoTest.buyProductTest(ProductInfoTest.java:29)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -112,16 +114,18 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2071674587", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2071674587'><pre>java.lang.AssertionError: expected [20000] but found [82]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:1419)
-	at org.testng.Assert.assertEquals(Assert.java:1383)
-	at org.testng.Assert.assertEquals(Assert.java:1429)
-	at com.qa.flipkart.tests.LoginPageTest.loginPaggeImageTest(LoginPageTest.java:32)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1041255755", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1041255755'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@id=&quot;container&quot;]/div/div[2]/div/div/div[1]/div/div[3]/div/form/button (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 129.0.6668.89, chrome: {chromedriverVersion: 129.0.6668.89 (951c0b97221f..., userDataDir: C:\Users\shree\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63510}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63510/devtoo..., se:cdpVersion: 129.0.6668.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d35f2f2158835e4060528753277b46eb
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.qa.flipkart.utils.ElementUtil.waitForElementVisible(ElementUtil.java:210)
+	at com.qa.flipkart.pages.ProductInfoPage.buyProduct(ProductInfoPage.java:53)
+	at com.qa.flipkart.tests.ProductInfoTest.buyProductTest(ProductInfoTest.java:29)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -149,8 +153,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>0</td>
-<td>com.qa.flipkart.tests.LoginPageTest@34a875b3</td></tr>
+<td>38</td>
+<td>com.qa.flipkart.tests.ProductInfoTest@db57326</td></tr>
 </table><p>
 </body>
 </html>

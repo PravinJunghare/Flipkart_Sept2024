@@ -15,7 +15,7 @@ public class LoginPage {
 	private ElementUtil eleUtil;
 	
 	//private loctors
-	private By  searchBar=By.xpath("//input[@title='Search for products, brands and more']");
+	private By  search=By.xpath("//input[@title='Search for Products, Brands and More']");
 	private By searchBtn=By.xpath("//button[@type='submit']");
 	private By cart =By.xpath("//a[@href='/viewcart?exploreMode=true&preference=FLIPKART']/span");
 	private By loginbtn=By.xpath("//*[contains(text(),'Login')]");
@@ -56,5 +56,12 @@ public class LoginPage {
 	public boolean isLoginBtnExits() {
 		return eleUtil.waitForElementVisible(loginbtn, AppConstant.DEFAULT_MEDIUM_TIMEOUT).isDisplayed();
 
+	}
+	
+	public SearchPage searchProduct(String productName)
+	{
+		eleUtil.waitForElementVisible(search, AppConstant.DEFAULT_MEDIUM_TIMEOUT).sendKeys(productName);
+		eleUtil.doClick(searchBtn);
+		return new SearchPage(driver);
 	}
 }

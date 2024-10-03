@@ -2,7 +2,9 @@ package com.qa.flipkart.utils;
 
 import java.time.Duration;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
+import java.util.Set;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -86,6 +88,21 @@ public class ElementUtil {
 			String attrVal = e.getAttribute(attrName);
 			System.out.println(attrVal);
 		}
+	}
+	
+	/*
+	 * This method is used switch from parent window to child window
+	 */
+	
+	public void switchToWindow()
+	{
+		Set<String> handels = driver.getWindowHandles();
+		Iterator<String> it = handels.iterator();
+		String parwindow = it.next();
+		System.out.println(parwindow);
+		String child = it.next();
+		driver.switchTo().window(child);
+
 	}
 
 	public int getTotalElementsCount(By locator) {
